@@ -17,8 +17,7 @@ export class AppComponent implements OnInit {
   constructor(private primengConfig: PrimeNGConfig) {
     this.items = [
       {
-        label: 'My Travel Log',
-        icon: 'pi pi-fw pi-cog',
+        label: 'Handlooms',
         routerLink: ['travel-log'],
       },
     ];

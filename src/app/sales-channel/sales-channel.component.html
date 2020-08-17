@@ -1,8 +1,8 @@
 <!-- <img src="assets/page-under-construction.png" /> -->
 <div class="p-grid">
-  <p-card styleClass="card-container" header="Karnataka" class="p-col-12">
+  <p-card styleClass="card-container" header="Sarees" class="p-col-12">
     <div class="p-grid">
-      <div class="p-col-2" *ngFor="let imageDetail of karnatakaImageObject">
+      <div class="p-col-2" *ngFor="let imageDetail of sareeImageObject">
         <img
           [src]="imageDetail.url"
           (click)="showDialog(imageDetail)"
@@ -12,32 +12,9 @@
       </div>
     </div>
   </p-card>
-  <p-card styleClass="card-container" header="Kerala" class="p-col-12">
+  <p-card styleClass="card-container" header="Blouse" class="p-col-12">
     <div class="p-grid">
-      <div class="p-col-2" *ngFor="let imageDetail of keralaImageObject">
-        <img
-          [src]="imageDetail.url"
-          (click)="showDialog(imageDetail)"
-          width="100%"
-        />
-        <span style="text-align: center;">{{ imageDetail.name }}</span>
-      </div>
-    </div> </p-card
-  ><p-card styleClass="card-container" header="TamilNadu" class="p-col-12">
-    <div class="p-grid">
-      <div class="p-col-2" *ngFor="let imageDetail of tamilnaduImageObject">
-        <img
-          [src]="imageDetail.url"
-          (click)="showDialog(imageDetail)"
-          width="100%"
-        />
-        <span style="text-align: center;">{{ imageDetail.name }}</span>
-      </div>
-    </div>
-  </p-card>
-  <p-card styleClass="card-container" header="Andhra Pradesh" class="p-col-12">
-    <div class="p-grid">
-      <div class="p-col-2" *ngFor="let imageDetail of andhraImageObject">
+      <div class="p-col-2" *ngFor="let imageDetail of blouseImageObject">
         <img
           [src]="imageDetail.url"
           (click)="showDialog(imageDetail)"

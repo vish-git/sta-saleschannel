@@ -8,10 +8,8 @@ import * as dataLinks from '../links';
 })
 export class SalesChannelComponent implements OnInit {
   display: boolean = false;
-  karnatakaImageObject: any = {};
-  andhraImageObject: any = {};
-  keralaImageObject: any = {};
-  tamilnaduImageObject: any = {};
+  sareeImageObject: any = {};
+  blouseImageObject: any = {};
 
   imageData: any;
   imageUrl: any;
@@ -21,10 +19,8 @@ export class SalesChannelComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.karnatakaImageObject = dataLinks.karnatakaTravelImageLinks;
-    this.andhraImageObject = dataLinks.andhraTravelImageLinks;
-    this.keralaImageObject = dataLinks.keralaTravelImageLinks;
-    this.tamilnaduImageObject = dataLinks.tamilnaduTravelImageLinks;
+    this.sareeImageObject = dataLinks.sareeImageLinks;
+    this.blouseImageObject = dataLinks.blouseImageLinks;
   }
 
   showDialog(imageObject: any) {
