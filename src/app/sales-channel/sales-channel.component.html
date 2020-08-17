@@ -1,0 +1,62 @@
+<!-- <img src="assets/page-under-construction.png" /> -->
+<div class="p-grid">
+  <p-card styleClass="card-container" header="Karnataka" class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-2" *ngFor="let imageDetail of karnatakaImageObject">
+        <img
+          [src]="imageDetail.url"
+          (click)="showDialog(imageDetail)"
+          width="100%"
+        />
+        <span style="text-align: center;">{{ imageDetail.name }}</span>
+      </div>
+    </div>
+  </p-card>
+  <p-card styleClass="card-container" header="Kerala" class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-2" *ngFor="let imageDetail of keralaImageObject">
+        <img
+          [src]="imageDetail.url"
+          (click)="showDialog(imageDetail)"
+          width="100%"
+        />
+        <span style="text-align: center;">{{ imageDetail.name }}</span>
+      </div>
+    </div> </p-card
+  ><p-card styleClass="card-container" header="TamilNadu" class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-2" *ngFor="let imageDetail of tamilnaduImageObject">
+        <img
+          [src]="imageDetail.url"
+          (click)="showDialog(imageDetail)"
+          width="100%"
+        />
+        <span style="text-align: center;">{{ imageDetail.name }}</span>
+      </div>
+    </div>
+  </p-card>
+  <p-card styleClass="card-container" header="Andhra Pradesh" class="p-col-12">
+    <div class="p-grid">
+      <div class="p-col-2" *ngFor="let imageDetail of andhraImageObject">
+        <img
+          [src]="imageDetail.url"
+          (click)="showDialog(imageDetail)"
+          width="100%"
+        />
+        <span style="text-align: center;">{{ imageDetail.name }}</span>
+      </div>
+    </div>
+  </p-card>
+</div>
+
+<p-dialog
+  [header]="imageName"
+  [(visible)]="display"
+  [style]="{ width: '50vw' }"
+  [maximizable]="true"
+>
+  <div class="p-grid">
+    <img [src]="imageUrl" width="100%" class="p-col-6" />
+    <div class="p-col-6">{{ imageDesc }}</div>
+  </div>
+</p-dialog>
